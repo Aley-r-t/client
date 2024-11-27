@@ -1,25 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Dasboard from './pages/Dasboard';
+import Dashboard from './pages/Dashboard';
 import Facturas from './pages/Facturas';
-import { useState } from 'react'
-import './App.css'
+import Clientes from './pages/Clientes';  // Asegúrate de importar el componente Clientes
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Router>
-    <Routes>
-      <Route path="/" element={<Login setAuthToken={() => {}} />} />
-      <Route path="/home" element={<Home />} />
-      <Route path='/dasboard' element={<Dasboard  /> }/>
-      <Route path='/facturas' element={<Facturas /> }/>
-      
-    </Routes>
-  </Router>
-  )
+      <Routes>
+        {/* Ruta de Login */}
+        <Route path="/" element={<Login />} />
+
+        {/* Rutas sin verificación de token */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/facturas" element={<Facturas />} />
+        <Route path="/clientes" element={<Clientes />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
