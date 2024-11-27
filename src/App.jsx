@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login setAuthToken={() => {}} />} />
+      <Route path="/" element={<Login setAuthToken={() => {}} />} />
+      <Route path="/home" element={<Home />} />
       <Route path='/dasboard' element={<Dasboard  /> }/>
       <Route path='/facturas' element={<Facturas /> }/>
       
