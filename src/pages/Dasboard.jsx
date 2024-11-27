@@ -4,6 +4,7 @@ import { Bar } from 'react-chartjs-2';
 import { FaSignOutAlt } from 'react-icons/fa';
 import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
+import { FaFileInvoice } from 'react-icons/fa';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -92,12 +93,12 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <button
-          onClick={generatePdf}
-          className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-200"
-        >
+        <button onClick={generatePdf}
+          className="mt-6 bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600 transition duration-200">
+          <FaFileInvoice className="inline-block mr-2" />
           Generar PDF
         </button>
+
 
         <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Gráfico de Facturas por Mes</h2>
