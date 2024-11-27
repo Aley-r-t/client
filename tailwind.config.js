@@ -5,5 +5,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'), // Asegúrate de tener estos plugins configurados correctamente
+    require('autoprefixer')
+  ],
 }
