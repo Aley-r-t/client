@@ -11,26 +11,41 @@
   },
   "dependencies": {
     "axios": "^1.7.8",
+<<<<<<< HEAD
+    "chart.js": "^3.9.1",
+    "file-saver": "^2.0.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-csv": "^2.2.2",
+=======
     "chart.js": "^4.4.6",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.2",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
+>>>>>>> 851d881e6e83041441a49fca4cf49681b6eb9f80
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
+    "react-papaparse": "^4.4.0",
     "react-router": "^7.0.1",
-    "react-router-dom": "^7.0.1"
+    "react-router-dom": "^7.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
     "vite": "^5.4.10"
   }
 }
